@@ -1,0 +1,53 @@
+.hero{
+    position: relative;
+}
+
+.heroBaner{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
+    position: absolute;   
+}
+
+.heroTile{
+    position: absolute;
+    top: 300px;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroTile img{
+    width: 500px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button{
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons button img{
+    width: 20px;
+}
+
+#info{
+    width: 110px;
+    background-color: #bdbcbc73;
+    border: none;
+    color: white;
+}
+

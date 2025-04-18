@@ -1,0 +1,69 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: fixed;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent);
+    z-index: 10;
+}
+
+.leftNav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.leftNav img{
+    width: 100px;
+    cursor: pointer;
+}
+
+.anchors ul{
+    display: flex;
+    gap: 30px;
+}
+
+.anchors ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.rightNav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rightNav img{
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.togle{
+    background-color: #000000b7;
+}
+
+.logout button{
+    padding: 10px;
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.logout button:hover{
+    background-color: #fff;
+}

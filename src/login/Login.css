@@ -1,0 +1,72 @@
+.login{
+    height: 100vh;
+    background-image: url(/background_banner.jpg);
+}
+
+.login img{
+    width: 150px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.conta{
+    display: block;
+    margin: auto auto;
+    width: 350px;
+    padding: 50px;
+    background-color: #000000bd;
+}
+
+.inputarea{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.inputarea input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.inputarea button{
+    padding: 10px;
+    background-color: rgb(236, 35, 35);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.check{
+    display: flex;
+    gap: 10px;
+}
+
+.buttom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttom a{
+    text-decoration: none;
+    color: white;
+}
+
+.formSwitch{
+    margin-top: 30px;
+}
+
+.formSwitch p{
+    color: rgb(128, 126, 126);
+}
+
+.formSwitch span{
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
