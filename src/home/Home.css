@@ -1,34 +1,45 @@
-.hero{
+.hero {
     position: relative;
-}
-
-.heroBaner{
     width: 100%;
-    mask-image: linear-gradient(to right, transparent, black 75%);
-    -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
-    position: absolute;   
+    height: auto;
+    overflow: hidden;
 }
 
-.heroTile{
+.heroBaner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heroTile {
+    position: relative;
     top: 300px;
     padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.heroTile img{
+.heroTile img {
     width: 500px;
+    max-width: 90%;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.buttons button{
-    width: 90px;
+.buttons button {
+    min-width: 90px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -38,16 +49,91 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: white;
 }
 
-.buttons button img{
+.buttons button img {
     width: 20px;
 }
 
-#info{
-    width: 110px;
+#info {
+    width: auto;
     background-color: #bdbcbc73;
-    border: none;
     color: white;
 }
 
+/* ============ RESPONSIVE DESIGN ============ */
+
+@media (max-width: 1024px) {
+    .heroTile {
+        top: 220px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .heroTile img {
+        width: 400px;
+    }
+
+    .buttons button {
+        height: 38px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroTile {
+        top: 180px;
+        padding-left: 6%;
+        padding-right: 6%;
+        gap: 16px;
+    }
+
+    .heroTile img {
+        width: 300px;
+    }
+
+    .buttons {
+        gap: 15px;
+    }
+
+    .buttons button {
+        height: 36px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    .buttons button img {
+        width: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroTile {
+        top: 140px;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 14px;
+    }
+
+    .heroTile img {
+        width: 240px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #info {
+        background-color: rgba(189, 188, 188, 0.8);
+    }
+}

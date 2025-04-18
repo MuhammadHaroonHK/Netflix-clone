@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     display: flex;
     width: 100%;
     align-items: center;
@@ -12,48 +12,48 @@
     z-index: 10;
 }
 
-.leftNav{
+.leftNav {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.leftNav img{
+.leftNav img {
     width: 100px;
     cursor: pointer;
 }
 
-.anchors ul{
+.anchors ul {
     display: flex;
     gap: 30px;
 }
 
-.anchors ul li{
+.anchors ul li {
     list-style: none;
     cursor: pointer;
 }
 
-.rightNav{
+.rightNav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.rightNav img{
+.rightNav img {
     cursor: pointer;
 }
 
-.right{
+.right {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.togle{
+.togle {
     background-color: #000000b7;
 }
 
-.logout button{
+.logout button {
     padding: 10px;
     background-color: transparent;
     color: red;
@@ -64,6 +64,53 @@
     font-weight: 800;
 }
 
-.logout button:hover{
+.logout button:hover {
     background-color: #fff;
+}
+
+/* Menu icon hidden on large screens */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .anchors {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 20px 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        z-index: 9;
+    }
+
+    .anchors.open {
+        display: flex;
+    }
+
+    .anchors ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .right p {
+        display: none;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.menu-icon img{
+    width: 20px;
 }

@@ -1,26 +1,107 @@
-.card{
-    display: flex;
-    gap: 8px;
-    box-sizing: border-box;
-    width: 1200px;
-    overflow: hidden;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    
-    margin-top: 20px;
-    margin-bottom: 20px;
+.cards {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.card::-webkit-scrollbar{
+.cards h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: white;
+}
+
+/* Scrollable card row */
+.card {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.card::-webkit-scrollbar {
     display: none;
 }
 
-.card img{
+.card > div {
+    flex: 0 0 auto;
+    text-align: center;
+    color: white;
+}
+
+/* Card image */
+.card img {
     width: 200px;
+    height: auto;
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+/* Card title */
+.card p {
+    margin-top: 5px;
+    font-size: 14px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     cursor: pointer;
 }
 
-.card p{
-    cursor: pointer;
+/* ========== Responsive Design ========== */
+
+@media (max-width: 1024px) {
+    .card img {
+        width: 160px;
+    }
+
+    .card p {
+        font-size: 13px;
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card img {
+        width: 140px;
+    }
+
+    .card p {
+        font-size: 12px;
+        max-width: 140px;
+    }
+
+    .cards h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card img {
+        width: 120px;
+    }
+
+    .card p {
+        font-size: 11px;
+        max-width: 120px;
+    }
+
+    .cards h2 {
+        font-size: 18px;
+        margin-left: 5%;
+    }
+
+    .card {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
