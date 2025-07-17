@@ -24,12 +24,14 @@ const Home = () => {
       </div>
 
       {/* Categories go here, OUTSIDE .hero */}
+      <div className='contain'>
       <Catagories />
       <Catagories Catagorie={"Only on Netflix"} changeCateg={"top_rated"} />
       <Catagories Catagorie={"Blockbustor Movies"} changeCateg={"popular"} />
       <Catagories Catagorie={"Upcomming"} changeCateg={"upcoming"} />
+</div>
+      
 
-      {/* Footer placed after all content */}
       <Footer />
     </div>
   )

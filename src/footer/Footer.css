@@ -84,4 +84,7 @@
     .copy {
         text-align: center;
     }
+    .container {
+    padding: 18px 8px;
+    }
 }

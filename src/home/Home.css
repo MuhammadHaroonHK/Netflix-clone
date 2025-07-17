@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     height: auto;
-    overflow: hidden;
 }
 
 .heroBaner {
@@ -64,6 +63,10 @@
     color: white;
 }
 
+.contain{
+    margin-top: 350px;
+    padding-left: 90px;
+}
 /* ============ RESPONSIVE DESIGN ============ */
 
 @media (max-width: 1024px) {
@@ -81,6 +84,10 @@
         height: 38px;
         font-size: 13px;
     }
+    .contain{
+    margin-top: 250px;
+    padding-left: 80px;
+}
 }
 
 @media (max-width: 768px) {
@@ -108,6 +115,10 @@
     .buttons button img {
         width: 18px;
     }
+    .contain{
+    margin-top: 200px;
+    padding-left: 38px;
+}
 }
 
 @media (max-width: 480px) {
@@ -136,4 +147,8 @@
     #info {
         background-color: rgba(189, 188, 188, 0.8);
     }
+    .contain{
+    margin-top: 150px;
+    padding-left: 8px;
+}
 }

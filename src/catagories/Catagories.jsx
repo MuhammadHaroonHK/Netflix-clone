@@ -28,8 +28,8 @@ const Catagories = ({Catagorie, changeCateg}) => {
                   <h2>{Catagorie?Catagorie:"Populat on Netflix"}</h2>
                 </div>
                 <div className='card'>
-                  {apiData.map((data) => {
-                    return <div>
+                  {apiData.map((data, index) => {
+                    return <div key={index}>
                       <img src={`https://image.tmdb.org/t/p/w500` +data.backdrop_path} alt="" />
                       <p>{data.title}</p>
                     </div>
